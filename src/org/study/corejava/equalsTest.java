@@ -69,7 +69,8 @@ class tester2 {
 		 System.out.println(et.equals(et));
 		 System.out.println("**Interface test**");
 		 inter a = new inter();
-		 inter1 a1 = new inter1();
+		 @SuppressWarnings("unused")
+		inter1 a1 = new inter1();
 		 if(a instanceof test) 
 			 System.out.println("true");
 		 System.out.println();
