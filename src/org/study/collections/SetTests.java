@@ -17,6 +17,9 @@ public class SetTests {
 		//This hashset will contain the ratings of the employee
 		Set<Employee> employee = new HashSet<>();
 		Employee oo = new Employee("Pulkit" , 27);
+		if(employee instanceof Set) //In such cases we will not use the parameter type
+			//Similar to this if we are using List.class then also we should not give type information.
+			System.out.println("Employee is an instance of Set\n");
 		employee.add(oo);
 		Employee e = new Employee("Gargi" , 24);
 		employee.add(e);
