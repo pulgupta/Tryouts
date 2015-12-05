@@ -3,7 +3,8 @@ package org.study.algos;
 public class MergeSort {
 	
 	static int[] arr = {4,7,9,10,1,8,6,3,5};
-	static int [] tempMergArr = {};
+	static int [] tempMergArr = new int[9];
+	
 	public static void mergeSort(int low, int high) {
 		
 		if(high>low) {
@@ -39,7 +40,9 @@ public class MergeSort {
 	}
 	
 	public static void main(String args[]) {
-		
+		mergeSort(0, arr.length-1);
+		for (int  a : arr) {
+			System.out.println(a);
+		}
 	}
-	
 }

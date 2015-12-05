@@ -23,6 +23,7 @@ public class GenericTips<E extends Number> {
 	}
 	
 	//In this way we can make a method generic without actually changing the class
+	//class is taking a E and we are taking something else here as K
 	public static <K> Set<K> testType() {
 		return new HashSet<K>();
 	}
