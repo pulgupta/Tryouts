@@ -19,12 +19,13 @@ public class InvariantTest<E> {
 		this.list = l;
 	}
 	/**
-	 * In case we want to perform some tasks in which know that the collection will return some types which are subclass
-	 * then in those cases we can also use use ? super Integer - which means any class which is a super class of Integer
+	 * In case we want to perform some tasks in which know that the collection will return some types which are 
+	 * subclass then in those cases we can also use use ? super Integer - which means any class which 
+	 * is a super class of Integer
 	 * @param l
-	 * you want all the data from the list to set into another list of type <Object> then that method should be ? super E as 
-	 * object is a super class of E which is an Integer. We mainly do this is in consumers as there we will then have the
-	 * option to create a Object acceptor. 
+	 * you want all the data from the list to set into another list of type <Object> then that method 
+	 * should be ? super E as object is a super class of E which is an Integer. We mainly do this is 
+	 * in consumers as there we will then have the option to create a Object acceptor. 
 	 */
 	public void setListGeneric(List<? extends E> l) {
 		//cannot use this as lists are invariants

@@ -1,0 +1,30 @@
+package org.study.enums;
+
+public class WhoIsBetter {
+	
+	public static void main(String args[]) {
+		System.out.println("lets see who is better");
+		//String fistHero = (String)DC.BATMAN;
+		String firstHero = (DC.BATMAN).toString();
+		String SecondHero = (Marvel.IRONMAN).toString();
+		
+		if(firstHero.length() > SecondHero.length())
+			System.out.println(firstHero);
+		else
+			System.out.println(SecondHero);
+		
+		//calling enum method - not able to call enum method
+		DC.BATMAN.getDescription();
+		
+		System.out.println(Marvel.IRONMAN.attribute1);
+		System.out.println(Marvel.CAPTAINAMERICA.attribute2);
+		
+		DC dc = DC.fromString("SUPERMAN");
+		System.out.println("from string example " + dc);
+		
+		//ORDINAL TEST CLIENT
+		
+		System.out.println("Ordinal example " + OrdinalExample.DUET.number());
+		System.out.println("Ordinal example " + OrdinalExample.DECTET.getNumber());
+	}
+}

@@ -18,19 +18,21 @@ public class OrderBOImplTest {
 
 	@Mock
 	OrderDAO dao;
+	private OrderBOImpl bo;
 	
 	@Before
 	public void setup() {
 		//This will scan the object passed in the method call.
 		//All the members marked as @Mock will be mocked out.
 		MockitoAnnotations.initMocks(this);
+		bo = new OrderBOImpl();
+		bo.setDao(dao);
 	}
 	
 	@Test
 	public void placeOrder_shouldCreateAnOrder() throws SQLException, BOException {
 		
-		OrderBOImpl bo = new OrderBOImpl();
-		bo.setDao(dao);
+		
 		Order order = new Order();
 		//This will check if in case we are calling the create method on the DAO 
 		//In that case we will then be calling the below and will return the integer as mentioned below.
@@ -38,8 +40,36 @@ public class OrderBOImplTest {
 		boolean result = bo.placeOrder(order);
 		assertTrue(result);
 		
-		//This will check if the mocked object is actually called only and only once.
+		//This will check if the mocked method is actually called only and only once.
 		verify(dao).create(order);
 	}
 
+	@Test
+	public void placeOrder_shouldNotCreateAnOrder() throws SQLException, BOException {
+		
+		Order order = new Order();
+		//This will check if in case we are calling the create method on the DAO 
+		//In that case we will then be calling the below and will return the integer as mentioned below.
+		when(dao.create(order)).thenReturn(new Integer(0));
+		boolean result = bo.placeOrder(order);
+		assertFalse(result);
+		
+		//This will check if the mocked method is actually called only and only once.
+		verify(dao).create(order);
+	}
+	
+	@SuppressWarnings("unchecked")
+	@Test(expected=BOException.class)
+	public void placeOrder_shouldThrowBOException() throws SQLException, BOException {
+		
+		Order order = new Order();
+		//This will check if in case we are calling the create method on the DAO 
+		//In that case we will then be calling the below and will return the integer as mentioned below.
+		when(dao.create(order)).thenThrow(SQLException.class);
+		bo.placeOrder(order);
+		//assertFalse(result);
+		
+		//This will check if the mocked method is actually called only and only once.
+		verify(dao).create(order);
+	}
 }
