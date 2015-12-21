@@ -6,6 +6,7 @@ import java.util.List;
 
 public class IteratorExample {
 	public static void main(String args[]) {
+		
 		List<Integer> list = new ArrayList<>();
 		list.add(10);
 		list.add(20);
@@ -16,6 +17,10 @@ public class IteratorExample {
 		Iterator<Integer> itr = list.iterator();
 		while(itr.hasNext()) {
 			itr.next();
+			
+			//The below statement will result in concurrent modification error.
+			//list.add(40);
+			
 			//We can only remove an element using the remove method only if we have called next 
 			//remember that iterator maintains the reference in between of the elements
 			itr.remove();
