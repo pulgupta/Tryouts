@@ -10,12 +10,25 @@ public class ThreadingMaths {
 		
 		
 		Thread thCos = new Thread(cos);
+		thCos.setPriority(5);
 		Thread thSin = new Thread(sin);
 		Thread thTan = new Thread(tan);
+		
+		thSin.setPriority(thTan.getPriority() + 1);
+		thTan.setPriority(1);
+		
+		System.out.println("Priorities are as : Cos - " + thCos.getPriority());
+		System.out.println("Priorities are as : Sin - " + thSin.getPriority());
+		System.out.println("Priorities are as : Tan - " + thTan.getPriority());
 		
 		thCos.start();
 		thSin.start();
 		thTan.start();
+		
+		System.out.println("Priorities are as : Cos - " + thCos.getPriority());
+		System.out.println("Priorities are as : Sin - " + thSin.getPriority());
+		System.out.println("Priorities are as : Tan - " + thTan.getPriority());
+		
 		
 		try {
 			thCos.join();

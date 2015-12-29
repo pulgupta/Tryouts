@@ -26,5 +26,11 @@ public class WhoIsBetter {
 		
 		System.out.println("Ordinal example " + OrdinalExample.DUET.number());
 		System.out.println("Ordinal example " + OrdinalExample.DECTET.getNumber());
+		
+		System.out.println(BasicOperation.PLUS);
+		Operation op = BasicOperation.PLUS;
+		System.out.println(op.apply(10, 20));
+		System.out.println(BasicOperation.MINUS.apply(10, 20));
+		
 	}
 }

@@ -27,6 +27,7 @@ class genericUtils <E>
 	 * @param i : first position
 	 * @param j : second position
 	 * @return
+	 * This ? will help us in hiding the use of generics from the client
 	 */
 	@SuppressWarnings({ "unchecked", "rawtypes" })
 	public static boolean swap(List<?> list, int i, int j) {
