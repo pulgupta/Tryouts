@@ -27,6 +27,8 @@ class genericUtils <E>
 	 * @param i : first position
 	 * @param j : second position
 	 * @return
+	 * @throws : This is a java doc annotation and is used to document the exception
+	 * thrown.
 	 * This ? will help us in hiding the use of generics from the client
 	 */
 	@SuppressWarnings({ "unchecked", "rawtypes" })
