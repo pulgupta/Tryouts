@@ -9,7 +9,7 @@ public class BinarySearch {
 		System.out.println(found);
 	}
 	/**
-	 * 
+	 * Recursive approach to binary search. This is good.
 	 * @param arr : Array to be searched
 	 * @param e : Element to be searched
 	 * @param low : lower bound of the sub array

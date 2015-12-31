@@ -12,6 +12,10 @@ class Base {
 		return "base";
 	}
 	
+	public String unique1() {
+		return "unique1";
+	}
+	
 }
 
 class Derived extends Base {
@@ -26,7 +30,11 @@ class Derived extends Base {
 		return "derived";
 	}
 	
+	public String unique2() {
+		return "unique2";
+	}
 }
+
 public class Polymorphism {
 
 	public static void main(String args[]) {
