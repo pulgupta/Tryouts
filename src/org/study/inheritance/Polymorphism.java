@@ -15,7 +15,9 @@ class Base {
 	public String unique1() {
 		return "unique1";
 	}
-	
+	public String unique4() {
+		return "unique1";
+	}
 }
 
 class Derived extends Base {
@@ -32,6 +34,9 @@ class Derived extends Base {
 	
 	public String unique2() {
 		return "unique2";
+	}
+	public String unique4(int a) {
+		return "unique1";
 	}
 }
 
