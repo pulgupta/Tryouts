@@ -7,10 +7,10 @@ import java.io.ObjectOutputStream;
 
 public class SerializationTester {
 
-	public static void main(String[] args) {
-		Student st = new Student("Pulkit", 27);
+	public static void serializeStudent() {
+		Student st = new Student("Gargi", 27);
 		try {
-			FileOutputStream fs = new FileOutputStream("/Users/pulgupta/Documents/tester1.txt" , true);
+			FileOutputStream fs = new FileOutputStream("/Users/pulgupta/Documents/tester1.txt" , false);
 			ObjectOutputStream os = new ObjectOutputStream(fs);
 			os.writeObject(st);
 			os.flush();
@@ -24,5 +24,8 @@ public class SerializationTester {
 			e.printStackTrace();
 		}
 		
+	}
+	public static void main(String[] args) {
+		serializeStudent();
 	}
 }
