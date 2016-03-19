@@ -51,15 +51,15 @@ class subClass extends equalsTest {
 	}
 }
 
-interface test {
+interface test1 {
 	int a =10;
 }
 
-class inter implements test {
+class inter implements test1 {
 	
 }
 
-class inter1 implements test {
+class inter1 implements test1 {
 	
 }
 class tester2 {
@@ -71,7 +71,7 @@ class tester2 {
 		 inter a = new inter();
 		 @SuppressWarnings("unused")
 		inter1 a1 = new inter1();
-		 if(a instanceof test) 
+		 if(a instanceof test1) 
 			 System.out.println("true");
 		 System.out.println();
 		 }

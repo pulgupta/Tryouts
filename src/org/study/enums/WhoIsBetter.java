@@ -1,8 +1,11 @@
 package org.study.enums;
-
+import org.study.enums.EnumInClass.myenum;
 public class WhoIsBetter {
 	
 	public static void main(String args[]) {
+		
+		//Just for demo. You can ignore the next line
+		System.out.println(myenum.DEMO_PRINT);
 		System.out.println("lets see who is better");
 		//String fistHero = (String)DC.BATMAN;
 		String firstHero = (DC.BATMAN).toString();

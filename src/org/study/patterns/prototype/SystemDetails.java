@@ -28,7 +28,10 @@ public abstract class SystemDetails implements Cloneable {
 	public void setType(String type) {
 		this.type = type;
 	}
-	
+	/**
+	 * As per effective java : 
+	 * If you override the clone method in a non-final class, you should return an object obtained by invoking super.clone
+	 */
 	@Override
 	protected Object clone() throws CloneNotSupportedException {
 		System.out.println("Cloneing");
