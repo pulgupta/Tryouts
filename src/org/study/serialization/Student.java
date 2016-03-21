@@ -2,6 +2,8 @@ package org.study.serialization;
 
 import java.io.Serializable;
 
+import org.junit.runners.model.InitializationError;
+
 public class Student implements Serializable{
 
 	/**
@@ -11,8 +13,14 @@ public class Student implements Serializable{
 	private String name;
 	private int age;
 	
+	public Student() throws InitializationError {
+		System.out.println("default constructor called");
+		throw new InitializationError(" " );
+		
+	}
 	public Student(String name, int age) {
 		super();
+		System.out.println("Parameterized constructor called");
 		this.name = name;
 		this.age = age;
 	}

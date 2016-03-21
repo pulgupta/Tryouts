@@ -10,6 +10,9 @@ import java.util.List;
 
 public class DeserializationTester {
 
+	/**
+	 * Just like in case of clone de-serialization will not call the constructor.
+	 */
 	public static void deSerializeStudent() {
 
 		try {

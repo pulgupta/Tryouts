@@ -26,6 +26,11 @@ public class EnumInClass {
 class EnumInClassTester {
 	public static void main(String[] args) {
 		EnumInClass ec = new EnumInClass();
+		myenum e = myenum.ADVANCED_PRINT;
+		if(e == myenum.ADVANCED_PRINT)
+			System.out.println("Hey dude we are dealing with advance print");
+		else
+			System.out.println("Ohh crap do a Demo print man :(");
 		ec.printEnum(myenum.DEMO_PRINT);
 	}
 }

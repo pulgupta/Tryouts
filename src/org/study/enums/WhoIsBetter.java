@@ -6,6 +6,7 @@ public class WhoIsBetter {
 		
 		//Just for demo. You can ignore the next line
 		System.out.println(myenum.DEMO_PRINT);
+		System.out.println(myenum.ADVANCED_PRINT.ordinal());
 		System.out.println("lets see who is better");
 		//String fistHero = (String)DC.BATMAN;
 		String firstHero = (DC.BATMAN).toString();

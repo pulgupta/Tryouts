@@ -10,7 +10,7 @@ public enum OrdinalExample {
 	//Better way of doing this is without using ordinals
 	
 	QUINTET(5),
-	SEXTET(6),
+	SEXTET(9),
 	SEPTET(7),
 	DECTET(10);
 	
@@ -19,7 +19,8 @@ public enum OrdinalExample {
 	OrdinalExample() {
 		this.size=99;
 	}
-	OrdinalExample(int size) {
+	//in this way we are actually calling constructor 
+	private OrdinalExample(int size) {
 		this.size = size;
 	}
 	
@@ -28,5 +29,11 @@ public enum OrdinalExample {
 	}
 	public int getNumber() {
 		return size;
+	}
+}
+class OrdinalTester {
+	public static void main(String[] args) {
+		OrdinalExample oe = OrdinalExample.SEXTET;
+		System.out.println(oe.getNumber());
 	}
 }
