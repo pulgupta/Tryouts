@@ -1,4 +1,4 @@
-package org.study.patters.observer;
+package org.study.patterns.observer;
 
 public abstract class Observer {
 

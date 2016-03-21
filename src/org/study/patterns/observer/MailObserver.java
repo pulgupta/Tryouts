@@ -1,4 +1,4 @@
-package org.study.patters.observer;
+package org.study.patterns.observer;
 
 public class MailObserver extends Observer{
 
