@@ -28,7 +28,7 @@ public class PassvaluenRef {
 
 
 //Test class
-class tester {
+class TesterRef {
 	public static void main(String args[]) {
 		int d = 9;
 		String e = "String";

@@ -25,13 +25,14 @@ public class ClassEqlNoHash {
 	}
 	@Override
 	public boolean equals(Object obj) {
-		if(this == obj)
-			return true;
-		if(! (obj instanceof ClassEqlNoHash))
-			return false;
-		ClassEqlNoHash o = (ClassEqlNoHash)obj;
-		return (o.getAddress().equals(this.getAddress()) && o.getName().equals(this.getName()));
-		
+//		if(this == obj)
+//			return true;
+//		if(! (obj instanceof ClassEqlNoHash))
+//			return false;
+//		ClassEqlNoHash o = (ClassEqlNoHash)obj;
+//		return (o.getAddress().equals(this.getAddress()) && o.getName().equals(this.getName()));
+//		
+		return false;
 	}
 	
 	@Override
