@@ -11,6 +11,7 @@ public class Hashing {
 
 	public static void main(String args[]) {
 		//Thus hash table is also a kind of hashmap
+		@SuppressWarnings("unused")
 		Map<Integer, Integer> mp = new Hashtable<>();
 		Map<ClassEqlNoHash, String> map = new HashMap<>();
 		

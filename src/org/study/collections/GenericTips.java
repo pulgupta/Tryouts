@@ -12,6 +12,7 @@ public class GenericTips<E extends Number> {
 	
 	private E[] elements;
 	Set<E> ssss;
+	@SuppressWarnings("unchecked")
 	public GenericTips() {
 		//will not work
 		//elements = new E[90];

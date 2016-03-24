@@ -2,8 +2,8 @@ package org.study.algos;
 
 public class MergeSort {
 	
-	static int[] arr = {4,7,9,10,1,8,6,3,5};
-	static int [] tempMergArr = new int[9];
+	static int[] arr = {3,2,5};
+	static int [] tempMergArr = new int[3];
 	
 	public static void mergeSort(int low, int high) {
 		
