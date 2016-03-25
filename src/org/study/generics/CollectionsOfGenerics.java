@@ -14,6 +14,20 @@ public class CollectionsOfGenerics<T> {
 	public void setData(T data) {
 		this.data = data;
 	}
+	//ERROR
+	//public boolean equals(T value) {
+		//return false;
+		
+	//}
+	/**
+	 * This below method is an error. 
+	 * We cannot reference non static variable from static context.
+	 * @return
+	 *
+	public static T printInfo() {
+		return data;
+	}
+	*/
 
 }
 
