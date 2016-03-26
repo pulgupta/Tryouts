@@ -18,6 +18,13 @@ public class Operations {
 		
 		int a = 0;
 		
+		//XOR DEMO
+		int x1 = 0b101;
+		int x2 = 0b011;
+		
+		System.out.println("XOR IS " + (x1 ^ x2));
+		
+		
 		//SHORT CIRCUIT DEMO
 		
 		if(false && (10/a == 1))

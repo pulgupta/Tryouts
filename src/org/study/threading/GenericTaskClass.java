@@ -1,12 +1,13 @@
 package org.study.threading;
 
 import java.io.IOException;
+import java.util.concurrent.locks.ReentrantLock;
 
 public class GenericTaskClass implements Runnable{
 
 	int id;
 	String name;
-	
+	ReentrantLock lock;
 	
 	public GenericTaskClass(int id, String name) {
 		super();
@@ -18,6 +19,7 @@ public class GenericTaskClass implements Runnable{
 		return id;
 	}
 	public void setId(int id) {
+		//lock.
 		this.id = id;
 	}
 	public String getName() {
@@ -34,8 +36,8 @@ public class GenericTaskClass implements Runnable{
 				System.out.println(name + " " + i);
 				try {
 					Thread.sleep(10);
-					int a = 10/0;
-					//Thread.currentThread().interrupt();
+					//int a = 10/0;
+					Thread.currentThread().interrupt();
 					//In the above line if interrupt is set on a thread then it will not
 					//go to sleep and rather will throw a InterruptedException
 				} catch (InterruptedException e) {
