@@ -1,5 +1,7 @@
 package org.study.patterns;
 
+import java.io.ObjectStreamException;
+
 public class SingeltonPattern {
 
 	private final int a;
@@ -11,6 +13,10 @@ public class SingeltonPattern {
 	private SingeltonPattern(int aa){
 		this.a = aa;
 		this.b = 20;
+	}
+	
+	private Object readResolve() throws ObjectStreamException {
+		return INSTANCE;
 	}
 	
 	public String toString() {
