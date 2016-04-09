@@ -2,9 +2,6 @@ package org.study.toTheNew;
 
 import java.io.*;
 import java.util.*;
-import java.text.*;
-import java.math.*;
-import java.util.regex.*;
 
 public class Solution2 {
 	
@@ -103,5 +100,6 @@ public class Solution2 {
         }
         
         bw.close();
+        in.close();
     }
 }

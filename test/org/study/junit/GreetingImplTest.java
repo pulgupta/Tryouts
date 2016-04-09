@@ -31,6 +31,7 @@ public class GreetingImplTest {
 	@Test(expected=IllegalArgumentException.class)
 	public void greetShouldThrowAnExceptionForNullName() {
 		System.out.println("greetShouldThrowAnExceptionForNullName");
+		@SuppressWarnings("unused")
 		String result = greeting.greeting(null);	
 	}
 	
@@ -38,6 +39,7 @@ public class GreetingImplTest {
 	@Test(expected=IllegalArgumentException.class)
 	public void greetShouldThrowAnExceptionForEmptyName() {
 		System.out.println("greetShouldThrowAnExceptionForEmptyName");
+		@SuppressWarnings("unused")
 		String result = greeting.greeting("");	
 	}
 	

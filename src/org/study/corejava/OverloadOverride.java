@@ -1,5 +1,13 @@
 package org.study.corejava;
 
+/**
+ * Useful things to remember :
+ * 1. Method return type is not part of the signature and thus cannot be the
+ * only change for overloading the methods
+ * 2. Order of parameters can be the only change for overloading the methods
+ * @author pulgupta
+ *
+ */
 public class OverloadOverride {
 
 	int x =10;
@@ -19,7 +27,15 @@ public class OverloadOverride {
 	
 }
 
-
+/**
+ * Important points to learn : 
+ * You cannot make the access modifier restrictive than that of the parent class
+ * in the overriding method.
+ * You can change the return type in the overriding method but only to a
+ * more restrictive type.
+ * @author pulgupta
+ *
+ */
 class testerOO extends OverloadOverride {
 	
 	int x =20;
