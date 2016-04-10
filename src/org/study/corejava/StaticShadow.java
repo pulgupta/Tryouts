@@ -5,7 +5,7 @@ class A {
 		System.out.println("A.fun()");
 	}
 	
-	static void newFun() {
+	static public void newFun() {
 		System.out.println("A.newFun()");
 	}
 }
