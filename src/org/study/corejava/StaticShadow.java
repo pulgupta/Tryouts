@@ -4,6 +4,10 @@ class A {
 	static void fun() {
 		System.out.println("A.fun()");
 	}
+	
+	static void newFun() {
+		System.out.println("A.newFun()");
+	}
 }
 
 class B extends A {
@@ -22,8 +26,11 @@ class B extends A {
  *
  */
 public class StaticShadow {
+	@SuppressWarnings("static-access") //This warning is coming because we are
+	//accessing static variable using an abject which is not required.
 	public static void main(String args[]) {
 		A a = new B();
 		a.fun(); // prints A.fun()
+		a.newFun();
 	}
 }
