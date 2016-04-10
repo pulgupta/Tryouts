@@ -1,4 +1,4 @@
-package org.study.collections;
+package org.study.generics;
 
 import java.util.ArrayList;
 import java.util.List;
