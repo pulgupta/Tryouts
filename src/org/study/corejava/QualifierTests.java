@@ -1,7 +1,6 @@
 package org.study.corejava;
 
 public class QualifierTests {
-
 	public final int a = 100;
 	String name;
 	
@@ -12,9 +11,4 @@ public class QualifierTests {
 	public void setName(String name){
 		this.name = name;
 	}
-}
-
-class Innertester {
-	public static void main(String args) {
-		}
 }
