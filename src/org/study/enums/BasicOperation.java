@@ -1,6 +1,7 @@
 package org.study.enums;
 
-public enum BasicOperation implements Operation {
+enum BasicOperationTest implements Operation {
+	
 	PLUS("+") {
 		public double apply(double x, double y) {
 			return (x+y);
@@ -15,7 +16,7 @@ public enum BasicOperation implements Operation {
 	
 	private final String symbol;
 	
-	private BasicOperation(String symbol) {
+	private BasicOperationTest(String symbol) {
 		this.symbol = symbol;
 	}
 	
@@ -24,4 +25,10 @@ public enum BasicOperation implements Operation {
 		return symbol;
 	}
 	
+}
+
+public class BasicOperation {
+	public static void main(String[] args) {
+		System.out.println(BasicOperationTest.PLUS.apply(10,100));
+	}
 }
