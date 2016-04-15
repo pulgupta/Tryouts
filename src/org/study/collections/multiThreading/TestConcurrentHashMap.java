@@ -12,7 +12,7 @@ public class TestConcurrentHashMap {
 		sc.addStudent("Pulkit2", "first2");
 		sc.addStudent("Pulkit3", "first3");
 		sc.addStudent("Pulkit4", "first4");
-		//We are using the same student object to crreate two callable threads.
+		//We are using the same student object to create two callable threads.
 		StudentConcHashMap sc1 = new StudentConcHashMap(s);
 		ExecutorService ec = Executors.newFixedThreadPool(4);
 		ec.submit(sc);
