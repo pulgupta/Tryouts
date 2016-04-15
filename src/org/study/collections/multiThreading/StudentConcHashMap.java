@@ -2,6 +2,7 @@ package org.study.collections.multiThreading;
 
 import java.util.Map.Entry;
 import java.util.concurrent.Callable;
+import java.util.concurrent.TimeUnit;
 import java.util.concurrent.locks.Lock;
 import java.util.concurrent.locks.ReentrantLock;
 
@@ -38,7 +39,7 @@ public class StudentConcHashMap implements Callable<String>{
 	}
 	
 	/**
-	 * This will not work as here we are not actually locking S.
+	 * lock.tryLock will not work as here we are not actually locking S.
 	 * We are locking the this instance. Hence even though this instance is locked and
 	 * as we have the same reference of student passed to other callable 
 	 * it will continue to modify s.
@@ -47,12 +48,14 @@ public class StudentConcHashMap implements Callable<String>{
 	 */
 	public String call() throws Exception {
 		/**
-		 * This synchronized is plying a huge part here.
-		 * When I was not using this I was able to produce inconsistency in the Map.
-		 * Once put all the data is updating correctly.
+		 * Thus to resolve the issue I have put a lock on the object which I want to 
+		 * protect. In this case it is the  student. Thus if someone has shared the same 
+		 * object to multiple callables then also this code will not break.
+		 * We just have to provide it enough time so that it can wait for
+		 * the other threads to release the lock.
 		 */
 		try{
-			if(lock.tryLock()) {
+			if(s.lock.tryLock(100, TimeUnit.SECONDS)) {
 				for (Entry<String, String> e : s.studentnClass.entrySet()) {
 					e.setValue(e.getValue() + " verified ");
 					System.out.println(e.getValue());
@@ -63,7 +66,7 @@ public class StudentConcHashMap implements Callable<String>{
 			System.out.println("**ERROR**");
 		}
 		finally {
-			lock.unlock();
+			s.lock.unlock();
 		}
 		return "Done";
 	}
