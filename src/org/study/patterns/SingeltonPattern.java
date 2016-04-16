@@ -2,6 +2,15 @@ package org.study.patterns;
 
 import java.io.ObjectStreamException;
 
+/**
+ * Found a great point of view here :
+ * In short, don't try to make the singletons manage access to themselves.
+ * Delegate that on something else. We can use Abstract factory pattern for this.
+ * Singleton can never be inherited as we are creating the constructor as private
+ * thus no class can extend a singleton.
+ * @author pulgupta
+ *
+ */
 public class SingeltonPattern {
 
 	private final int a;

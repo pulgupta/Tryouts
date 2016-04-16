@@ -24,6 +24,17 @@ public class Operations {
 		
 		System.out.println("XOR IS " + (x1 ^ x2));
 		
+		//Why do we do not need unsigned left shift
+		System.out.println("No unsigned left shift");
+		int lf = 0b11111111;
+		//In this case it will move the signed bit
+		System.out.println(lf>>2);
+		//In this case it will not move the signed bit
+		System.out.println(lf>>>2);
+		//In this case no need as we are not changing the right bits
+		System.out.println(lf<<2);
+		
+		System.out.println(lf);
 		
 		//SHORT CIRCUIT DEMO
 		

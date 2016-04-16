@@ -8,7 +8,7 @@ package org.study.corejava;
  * @author pulgupta
  *
  */
-public class OverloadOverride {
+class  OverloadOverrideClass{
 
 	int x =10;
 	public Number overrideThis(int a) {
@@ -36,7 +36,7 @@ public class OverloadOverride {
  * @author pulgupta
  *
  */
-class testerOO extends OverloadOverride {
+public class OverloadOverride extends OverloadOverrideClass {
 	
 	int x =20;
 	@Override
@@ -51,9 +51,10 @@ class testerOO extends OverloadOverride {
 	}
 	
 	public static void main(String[] args) {
-		OverloadOverride t = new testerOO();
+		OverloadOverrideClass t = new OverloadOverride();
 		t.overloadThis(0, "");
 		t.overrideThis(0);
+		//The variable called will depend on the reference
 		System.out.println(t.x);
 	}
 }
