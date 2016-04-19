@@ -8,7 +8,7 @@ import java.io.ObjectInputStream;
 import java.util.ArrayList;
 import java.util.List;
 
-public class DeserializationTester {
+public class DeExterlizationTester {
 
 	public static void main(String[] args) {
 		
