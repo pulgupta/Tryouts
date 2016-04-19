@@ -9,6 +9,7 @@ public class SerializationTester {
 
 	public static void serializeStudent() {
 		Student st = new Student("Gargi", 27);
+		st.setDob("thisIsInParent");
 		try {
 			FileOutputStream fs = new FileOutputStream("/Users/pulgupta/Documents/tester1.txt" , false);
 			ObjectOutputStream os = new ObjectOutputStream(fs);

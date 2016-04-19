@@ -4,7 +4,7 @@ import java.io.Serializable;
 
 import org.junit.runners.model.InitializationError;
 
-public class Student implements Serializable{
+public class Student extends Person implements Serializable{
 
 	/**
 	 * 

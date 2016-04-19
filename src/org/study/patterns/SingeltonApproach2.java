@@ -20,7 +20,12 @@ public class SingeltonApproach2 {
 			throw new InstantiationException();
 	}
 
-	public static SingeltonApproach2 newInstance() {
+	/**
+	 * This synchronization is requried else it can happen that two threads are 
+	 * trying to access this method and would 
+	 * @return
+	 */
+	public static synchronized SingeltonApproach2 newInstance() {
 		
 		if(ref == null){
 			try {
