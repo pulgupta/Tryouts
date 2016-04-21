@@ -1,5 +1,7 @@
 package org.study.threading;
 
+import java.io.IOException;
+
 class ExceptionGenerator implements Runnable{
 	
 	
@@ -9,7 +11,8 @@ class ExceptionGenerator implements Runnable{
 	 * @return
 	 */
 	private int divide() {
-		int result = 10/0;
+		int result = 0;
+		//result = 10/0;
 		return result;
 	}
 	/**
@@ -21,7 +24,8 @@ class ExceptionGenerator implements Runnable{
 		System.out.println("This is inside run");
 		this.divide();
 		System.out.println("This is after divide");    //This will not be printed
-		//throw new InitializationError("Ohh this is an error");
+		//throw new IOException("Ohh this is an error");
+		throw new RuntimeException();
 	}
 	
 }
