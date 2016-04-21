@@ -41,5 +41,10 @@ public class CallablenException {
 			System.out.println("ExecutionException " + e.getCause());
 			//e.printStackTrace();
 		}
+		finally{
+			//This will make sure the executor is shutdown so that we cannot submit
+			//more tasks to it
+			executor.shutdown();
+		}
 	}
 }
