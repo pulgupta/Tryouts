@@ -1,5 +1,8 @@
 package org.study.serialization.advanced;
 
+import java.io.IOException;
+import java.io.ObjectInputStream;
+import java.io.ObjectOutputStream;
 import java.io.Serializable;
 
 public class Employee implements Serializable{
@@ -33,5 +36,20 @@ public class Employee implements Serializable{
 		this.salary = salary;
 	}
 	
+	/**
+	 * Here we have created this object which will be called whenever we are doing 
+	 * serialization. This is similar to Externalization approach. However in externalization
+	 * we deal with objects and thus it hides the nitty gritty of dealing with
+	 * chars and int and other primitive types.
+	 * Hence even though we have this facility of creating write object etc. it is not
+	 * advisable to directly deal with it. If you need something like this we can always
+	 * switch to externalization.
+	 */
 	
+	private void writeObject(ObjectOutputStream out) throws IOException {
+		out.defaultWriteObject();
+		out.writeChars(name);
+		out.writeInt(salary);
+		out.writeObject(sectary);
+	}
 }

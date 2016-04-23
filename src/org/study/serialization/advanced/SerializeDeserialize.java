@@ -14,6 +14,8 @@ import java.io.ObjectOutputStream;
  * Hence if we reconstruct the same object graph again the relationship of this sharing will be
  * maintained and thus no extra objects will be created.
  * @author pulgupta
+ * However we must pay attention that this main method will result in 6 objects 
+ * 3 which were created earlier and 3 which were created as a result of deserialization
  */
 public class SerializeDeserialize {
 	public static void main(String[] args) throws FileNotFoundException, IOException, ClassNotFoundException {
@@ -42,6 +44,8 @@ public class SerializeDeserialize {
 		 tomRecreated.getSectary().setSalary(10);
 		 
 		 System.out.println("Jack's secretary salary after tom secretary's salary is updated " + jackRecreated.getSectary().getSalary());
+		 tracy.setSalary(2);
+		 System.out.println("Jack's secretary salary after tracy salary is updated " + jackRecreated.getSectary().getSalary());
 		 ois.close();
 	}
 }
