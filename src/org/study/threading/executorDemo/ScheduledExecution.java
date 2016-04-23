@@ -1,6 +1,7 @@
 package org.study.threading.executorDemo;
 
 import java.util.concurrent.Executors;
+import java.util.concurrent.Future;
 import java.util.concurrent.ScheduledExecutorService;
 import java.util.concurrent.TimeUnit;
 
@@ -25,6 +26,7 @@ class ScheduledExecutionTest implements Runnable {
 }
 public class ScheduledExecution {
 	public static void main(String[] args) {
+		//Future<Integer> f = new ScheduledExecutionTest();
 		ScheduledExecutorService sec = Executors.newScheduledThreadPool(10);
 		sec.scheduleAtFixedRate(new ScheduledExecutionTest(), 5, 2, TimeUnit.SECONDS);
 	}
