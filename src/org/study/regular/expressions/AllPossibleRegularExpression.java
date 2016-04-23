@@ -8,7 +8,10 @@ import java.util.regex.Pattern;
  * As a good point to remember if you see we can use string and even string builder 
  * for giving the string to test
  * @author pulgupta
- *
+ * Things covered
+ * 1. String matching true/false.
+ * 2. String builder matching true/false.
+ * 3. Extracting matches out of a big dataset.
  */
 public class AllPossibleRegularExpression {
 
@@ -18,8 +21,16 @@ public class AllPossibleRegularExpression {
 		StringBuilder data2 = new StringBuilder("Gargi");
 		AllPossibleRegularExpression.tryPattern(pattern1, data1);
 		AllPossibleRegularExpression.tryPattern(pattern1, data2);
+		String data3 = "Hello all this is a big data set. We will see if this will match" +
+					".We will use this set for regex. If all goes well the program will run";
+		AllPossibleRegularExpression.findMatches(pattern1, data3);
 	}
 	
+	/**
+	 * These methods will only tell if the data is as per the regular expressio
+	 * @param inputPattern
+	 * @param data
+	 */
 	public static void tryPattern(String inputPattern, String data) {
 		Pattern pattern = Pattern.compile(inputPattern);
 		Matcher matcher = pattern.matcher(data);
@@ -35,5 +46,21 @@ public class AllPossibleRegularExpression {
 			System.out.println("****What a great thing dude****");
 		else
 			System.out.println("****Try something else****");
+	}
+	
+	/**
+	 * We have a use case in which we can use regex to find the substrings in a big
+	 * string. We will take the string out of the complete data set and can then use it
+	 * for other purposes
+	 */
+	public static void findMatches(String inputPattern, String data) {
+		Pattern pattern = Pattern.compile(inputPattern);
+		Matcher matcher = pattern.matcher(data);
+		while(matcher.find()) {
+			int start = matcher.start();
+			int end = matcher.end();
+			String match = data.substring(start, end);
+			System.out.println(match);
+		}
 	}
 }
