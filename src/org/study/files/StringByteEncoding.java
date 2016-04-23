@@ -49,5 +49,14 @@ public class StringByteEncoding {
 		StringByteEncodingTest sbet = new StringByteEncodingTest();
 		sbet.decode(sbet.encode());
 		
+		
+		//Better way
+		System.out.println("\n\nWe can directly convert a string into a byte array");
+		byte[] bytes = new String("Hello world").getBytes();
+		for (byte b : bytes) {
+			System.out.print(b);
+		}
+		String s = new String(bytes); 
+		System.out.println("\n" + s);
 	}
 }
