@@ -1,0 +1,51 @@
+package org.study.files;
+
+import java.io.File;
+import java.io.IOException;
+import java.nio.file.DirectoryStream;
+import java.nio.file.Files;
+import java.nio.file.Path;
+import java.nio.file.Paths;
+import java.util.Date;
+
+class FilePropertiesTest {
+	
+	
+}
+/**
+ * This class will contain the basic utilities for files and 
+ * paths which the java language provides.
+ * @author pulgupta
+ *
+ */
+public class FileProperties {
+	public static void main(String[] args) throws IOException {
+		Path path = Paths.get("/Users/pulgupta/Documents/JavaFileTest");
+		//Resolve will not do any thing other than just concatinating the name with the 
+		//original path
+		Path path2 = path.resolve("../../newDir");
+		System.out.println("New path : " + path2);
+		
+		path2 = path2.normalize();
+		System.out.println("Normalized path : " + path2);
+		
+		File file = new File("/Users/pulgupta/Documents/JavaFileTest/serial1.txt");
+		file.createNewFile();
+		//Here I am converting Epoch time to date
+		Date date = new Date(file.lastModified());
+		System.out.println(date);
+		
+		/*
+		 * Traversing the files in  a directory
+		 */
+		System.out.println("\n****Traversing the files in a directory****");
+		try(DirectoryStream<Path> entries = Files.newDirectoryStream(path) )
+		{
+			for (Path entry : entries) {
+				System.out.println(entry);
+			}
+		}
+	}
+}
+
+
