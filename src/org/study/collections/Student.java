@@ -1,5 +1,15 @@
 package org.study.collections;
 
+/**
+ * This class will give us the example implementation of all the 
+ * major operations which we need to override.
+ * equals
+ * hashCode
+ * CompareTo
+ * toString
+ * @author pulgupta
+ *
+ */
 public class Student implements Comparable<Student>{
 
 	int rollNumber;
