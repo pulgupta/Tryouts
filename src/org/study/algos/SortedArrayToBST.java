@@ -9,7 +9,7 @@ class BstNode {
 public class SortedArrayToBST {
 	public static void main(String[] args) {
 		
-		int[] array = {1,2,3,4,5};
+		int[] array = {1,2,3};
 		SortedArrayToBST satb = new SortedArrayToBST();
 		BstNode root = satb.convert(array, 0, array.length-1);
 		satb.inorderTraversal(root);
