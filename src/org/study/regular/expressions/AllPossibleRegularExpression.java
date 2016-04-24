@@ -23,7 +23,9 @@ public class AllPossibleRegularExpression {
 		AllPossibleRegularExpression.tryPattern(pattern1, data2);
 		String data3 = "Hello all this is a big data set. We will see if this will match" +
 					".We will use this set for regex. If all goes well the program will run";
-		AllPossibleRegularExpression.findMatches(pattern1, data3);
+		//AllPossibleRegularExpression.findMatches(pattern1, data3);
+		String pattern2 = "((1?[0-9]):([0-5][0-9]))[ap]m";
+		AllPossibleRegularExpression.findMatches(pattern2, "11:59am");
 	}
 	
 	/**
@@ -59,8 +61,16 @@ public class AllPossibleRegularExpression {
 		while(matcher.find()) {
 			int start = matcher.start();
 			int end = matcher.end();
+			System.out.println("Start is : " + start + " and end is : " + end);
 			String match = data.substring(start, end);
 			System.out.println(match);
+			
+			System.out.println("dealing with groups");
+			int start2 = -1;
+			if(matcher.group(2) != null)
+				start2  = matcher.start(3);
+			System.out.println("Third groups starts at : " + start2);
 		}
+		
 	}
 }
