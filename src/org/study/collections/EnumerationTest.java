@@ -22,6 +22,8 @@ public class EnumerationTest {
 		
 		System.out.println("ITERATOR EXAMPLE");
 		//Lets iterate using iterator
+		//iterator() will give us a new iterator which we can then use to 
+		//traverse
 		Iterator<Integer> i = v.iterator();
 		while (i.hasNext()) {
 			Integer integer = (Integer) i.next();
