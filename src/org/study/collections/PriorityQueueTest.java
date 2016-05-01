@@ -23,7 +23,8 @@ public class PriorityQueueTest {
 		pq.add(1);
 		pq.add(16);
 		pq.add(2);
-		
+		int a = 10;
+		String s = "" + a;
 		/**
 		 * Iteration will not give us the correct order
 		 * This is because we are just traversing the collection

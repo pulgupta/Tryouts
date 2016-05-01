@@ -19,7 +19,7 @@ public class DeserializationTester {
 			FileInputStream fs = new FileInputStream("/Users/pulgupta/Documents/tester1.txt");
 			ObjectInputStream os = new ObjectInputStream(fs);
 			Student st = (Student) os.readObject();
-			System.out.println("The data of the object is " + st.getName() + " " + st.getAge());
+			System.out.println("The data of the object is " + st.getName() + " " + st.getAge() + " " + st.getCity());
 			// Solution for multiple serialized objects
 			List<Student> ls = new ArrayList<>();
 			try {

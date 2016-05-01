@@ -12,6 +12,7 @@ public class Student extends Person implements Serializable{
 	private static final long serialVersionUID = 1L;
 	private String name;
 	private int age;
+	private static String city;
 	
 	public Student() throws InitializationError {
 		System.out.println("default constructor called");
@@ -40,5 +41,12 @@ public class Student extends Person implements Serializable{
 	public void setAge(int age) {
 		this.age = age;
 	}
+	public static String getCity() {
+		return city;
+	}
+	public static void setCity(String city) {
+		Student.city = city;
+	}
 		
+	
 }

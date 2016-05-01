@@ -12,7 +12,7 @@ public class IteratorExample {
 		list.add(20);
 		list.add(30);
 		list.add(40);
-		
+		//list.s
 		//A simple iterator
 		Iterator<Integer> itr = list.iterator();
 		while(itr.hasNext()) {
