@@ -13,7 +13,7 @@ public class ArraySortedCheckRec {
 			return true;
 		if(arr[index] > arr[index+1])
 			return false;
-		return checkIfSorted(arr, index+1);
+		return checkIfSorted(arr, index);
 	}
 	
 	public static void main(String[] args) {

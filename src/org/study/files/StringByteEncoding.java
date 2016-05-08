@@ -1,5 +1,8 @@
 package org.study.files;
 
+import java.io.ByteArrayInputStream;
+import java.io.IOException;
+import java.io.InputStream;
 import java.nio.ByteBuffer;
 import java.nio.CharBuffer;
 import java.nio.charset.Charset;
@@ -45,7 +48,7 @@ class StringByteEncodingTest {
 }
 
 public class StringByteEncoding {
-	public static void main(String[] args) {
+	public static void main(String[] args) throws IOException {
 		StringByteEncodingTest sbet = new StringByteEncodingTest();
 		sbet.decode(sbet.encode());
 		
@@ -53,6 +56,8 @@ public class StringByteEncoding {
 		//Better way
 		System.out.println("\n\nWe can directly convert a string into a byte array");
 		byte[] bytes = new String("Hello world").getBytes();
+		InputStream bris = new ByteArrayInputStream(bytes);
+		System.out.println("counting byte array input stream " + bris.read() + " " + bris.read());
 		for (byte b : bytes) {
 			System.out.print(b);
 		}

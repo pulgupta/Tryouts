@@ -26,6 +26,11 @@ public class IteratorExample {
 			itr.remove();
 			System.out.println(itr.next());
 		}
+		System.out.println("lets for each a null list");
+		List<Integer> list2 = new ArrayList<>();
+		for (Integer integer : list2) {
+			System.out.println("good");
+		}
 		
 	}
 }
