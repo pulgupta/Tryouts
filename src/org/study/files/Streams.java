@@ -23,5 +23,10 @@ public class Streams {
 		is.read(b1);
 		System.out.println(new String(b1));
 		is.close();
+		
+		//LETS TRY THE SAME THING USING BUFFERED INPUT STREAM
+//		BufferedInputStream br = new BufferedInputStream(is);
+//		br.
+//		
 	}
 }

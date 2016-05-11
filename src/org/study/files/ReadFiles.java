@@ -51,7 +51,6 @@ public class ReadFiles {
 				System.out.println(sc.nextLine());
 		} 
 		catch (FileNotFoundException e) {
-			// TODO Auto-generated catch block
 			e.printStackTrace();
 		}
 		
@@ -85,7 +84,6 @@ public class ReadFiles {
 		try {
 			rf.readUsingStreams();
 		} catch (IOException e1) {
-			// TODO Auto-generated catch block
 			e1.printStackTrace();
 		}
 		
