@@ -17,7 +17,12 @@ class FilePropertiesTest {
 /**
  * This class will contain the basic utilities for files and paths which the
  * java language provides.
- * 
+ * Concepts coded are :
+ * File
+ * Path
+ * DirectoryStream
+ * FileChannel
+ * FileLock
  * @author pulgupta
  *
  */
