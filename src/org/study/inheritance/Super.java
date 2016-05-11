@@ -1,6 +1,10 @@
 package org.study.inheritance;
 
 class SuperTest {
+	public static final int a;
+	static {
+		a =10;
+	}
 	public SuperTest() {
 		System.out.println("This is in the parent class");
 	}
