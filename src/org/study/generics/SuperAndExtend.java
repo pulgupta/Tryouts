@@ -14,7 +14,7 @@ public class SuperAndExtend {
 		Number i = 10;
 		
 		//This can't as we are not sure in extend about the actual type
-		//of the elements the list can hold like double, integer etc.
+		//of the elements the list can hold like Double, Integer etc.
 		//list1.add(i); - //****ERROR****
 		
 		//This will work as we are adding number to a list which can hold
