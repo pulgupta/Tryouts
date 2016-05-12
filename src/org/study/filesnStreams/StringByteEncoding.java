@@ -1,4 +1,4 @@
-package org.study.files;
+package org.study.filesnStreams;
 
 import java.io.ByteArrayInputStream;
 import java.io.IOException;

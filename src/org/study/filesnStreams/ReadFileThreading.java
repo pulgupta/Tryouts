@@ -1,4 +1,4 @@
-package org.study.files;
+package org.study.filesnStreams;
 
 public class ReadFileThreading implements Runnable {
 

@@ -1,4 +1,4 @@
-package org.study.files;
+package org.study.filesnStreams;
 
 import java.io.BufferedReader;
 import java.io.DataInputStream;
