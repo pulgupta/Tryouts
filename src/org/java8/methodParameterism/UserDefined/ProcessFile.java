@@ -36,7 +36,15 @@ public class ProcessFile {
 		System.out.println(oneLine1);
 		
 		//JAVA 8 WAY OF DOING THINGS
-		String twoLine2 = ProcessFile.processFile((BufferedReader br) -> br.readLine() + br.readLine());
+		String twoLine2 = ProcessFile.processFile((BufferedReader br) -> {
+			try {
+				return br.readLine() + br.readLine();
+			}
+			catch(Exception e){
+				e.printStackTrace();
+			}
+			return null;
+			});
 		System.out.println(twoLine2);
 	}
 	

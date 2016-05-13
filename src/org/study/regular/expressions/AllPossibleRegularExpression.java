@@ -29,7 +29,7 @@ public class AllPossibleRegularExpression {
 	}
 	
 	/**
-	 * These methods will only tell if the data is as per the regular expressio
+	 * These methods will only tell if the data is as per the regular expression
 	 * @param inputPattern
 	 * @param data
 	 */

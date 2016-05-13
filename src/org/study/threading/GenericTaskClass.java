@@ -1,6 +1,5 @@
 package org.study.threading;
 
-import java.io.IOException;
 import java.util.concurrent.locks.ReentrantLock;
 
 public class GenericTaskClass implements Runnable{
