@@ -34,8 +34,8 @@ public class MyInteger {
 	 * creation of new object and thus the old object will remain the same.
 	 * @param a
 	 */
-	public static void modify(Integer a) {
-		a++;
+	public static int modify(Integer a) {
+		return a++;
 	}
 	
 	public static void modify(TestInteger a) {
