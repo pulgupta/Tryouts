@@ -31,6 +31,9 @@ public class MyIntegerTest {
 	 * This will be used to pass parameters to the test methods.
 	 * We will pass a collection of integer arrays.
 	 * Each array will hold the elements we defined in this class
+	 * This method should always be static as this method will be used by 
+	 * JUNIT to get the data and then create the instance of the test class in which
+	 * this is defined.
 	 * @return
 	 */
 	@Parameters
