@@ -17,12 +17,12 @@ import org.study.corejava.MyInteger;
  *
  */
 @RunWith(Parameterized.class)
-public class MyIntegerTest {
+public class MyIntegerParameterTest {
 
 	private int num;
 	private int expectedResult;
 	
-	public MyIntegerTest(int num, int expectedResult) {
+	public MyIntegerParameterTest(int num, int expectedResult) {
 		this.num = num;
 		this.expectedResult = expectedResult;
 	}

@@ -10,7 +10,7 @@ import java.util.logging.Logger;
  * @author pulgupta
  *
  */
-public class SingeltonApproach2 {
+public class SingeltonApproach2{
 	
 	static SingeltonApproach2 ref;
 	final static Logger logger  = Logger.getLogger("SingeltonApproach2");
@@ -37,7 +37,7 @@ public class SingeltonApproach2 {
 		return ref;
 	}
 	
-	public static void main(String[] args)  {
+	public static void main(String[] args) throws CloneNotSupportedException  {
 		try {
 			SingeltonApproach2 sa = new SingeltonApproach2();
 		} catch (InstantiationException e) {
@@ -47,6 +47,7 @@ public class SingeltonApproach2 {
 		
 		SingeltonApproach2 sa2 = SingeltonApproach2.newInstance();
 		SingeltonApproach2 sa3 = SingeltonApproach2.newInstance();
+		//SingeltonApproach2 sa4 = (SingeltonApproach2)sa3.clone();
 		
 	}
 	
