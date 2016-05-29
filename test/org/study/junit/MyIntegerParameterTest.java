@@ -38,6 +38,11 @@ public class MyIntegerParameterTest {
 	 */
 	@Parameters
 	public static Collection<Integer[]> data(){
+		/**
+		 * This double braces will create a anonymous class and then add the elements into it
+		 * This should not be used in any production level code as it will create new anonymous 
+		 * class and will take up the pemgen space.
+		 */
 		return Arrays.asList(new Integer[][]{{2,2},{1,1},{2,2}});
 	}
 	

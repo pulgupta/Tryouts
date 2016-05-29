@@ -1,8 +1,15 @@
 package org.study.algos;
 
+/**
+ * Merge sort works by dividing the arrays into smaller arrays and
+ * once they are broken down to a single element level we will then merge them
+ * 
+ * @author pulgupta
+ *
+ */
 public class MergeSort {
 	
-	static int[] arr = {3,2,5};
+	static int[] arr = {3,2,5,7,1};
 	static int [] tempMergArr = new int[3];
 	
 	public static void mergeSort(int low, int high) {
