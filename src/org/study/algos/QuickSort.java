@@ -9,7 +9,7 @@ package org.study.algos;
  */
 public class QuickSort {
 
-	static int[] arr = {1,9,4,7,8,3,2};
+	static int[] arr = {2,9,4,7,8,1,3};
 	
 	public static void quickSort(int low, int high) {
 		
@@ -23,7 +23,7 @@ public class QuickSort {
 	public static int partition(int low, int high) {
 		//in this step we will just pick the last element as the pivot
 		int pivot = arr[high-1];
-		
+		System.out.print("\n\nPivot is " + pivot);
 		//lets bring the pivot to the right position
 		int pivotpos=low-1;
 		int i=low;

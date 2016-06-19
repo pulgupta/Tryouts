@@ -7,6 +7,8 @@ import java.io.FileInputStream;
 import java.io.FileNotFoundException;
 import java.io.FileReader;
 import java.io.IOException;
+import java.io.InputStreamReader;
+import java.nio.charset.Charset;
 import java.util.Scanner;
 
 /**
@@ -30,6 +32,11 @@ public class ReadFiles {
 			br = new BufferedReader(new FileReader("/Users/pulgupta/Documents/JavaFileTest/user1.txt"));
 			while((currenntLine = br.readLine() )!= null)		
 				System.out.println(currenntLine);
+			//A new way of reading input by combining streams and readers by using
+			//InputStreamReader
+			BufferedReader brNew = new BufferedReader(
+					new InputStreamReader(
+							new FileInputStream("/Users/pulgupta/Documents/JavaFileTest/user1.txt"), "UTF-8"));
 		} 
 		catch (FileNotFoundException e) {
 			// TODO Auto-generated catch block

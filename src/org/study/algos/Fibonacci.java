@@ -2,6 +2,13 @@ package org.study.algos;
 
 import java.util.Scanner;
 
+/**
+ * Solving the fibonacci series in O(n).
+ * There is one more way of doing this using recursion + memoization
+ * which is nothing but a good implementation of DP	
+ * @author pulgupta
+ *
+ */
 public class Fibonacci {
 
 	public static void main(String[] args) {
@@ -13,7 +20,7 @@ public class Fibonacci {
 		int b = 1;
 		if(n >= 2)
 			System.out.print(b + " ");		
-		
+		//linear time and constant space
 		for(int i=2;i<n;i=i+2) {
 			a = a + b;
 			b = b + a; 
