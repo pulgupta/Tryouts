@@ -6,6 +6,7 @@
 # Target directory
 target/
 hackerRank/
+countDownLatch/
 # Package Files #
 *.jar
 *.war
