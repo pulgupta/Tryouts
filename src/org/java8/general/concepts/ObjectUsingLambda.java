@@ -27,12 +27,17 @@ public class ObjectUsingLambda {
 		//functional interface to which we are assigning it
 		Supplier<Apple> supplier = () -> new Apple();
 		
+		//METHOD REFERENCE
+		Supplier<Apple> supplier1 = Apple::new;
+		
 		//Once we have defined the implementation now 
 		// we can call that implementation
 		Apple apple = supplier.get();
+		Apple apple2 = supplier1.get();
 		
 		//TEST CASE to check if we have a correct object
 		System.out.println(apple.test());
+		System.out.println(apple2.test());
 	}
 	
 }
