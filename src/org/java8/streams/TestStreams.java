@@ -7,6 +7,7 @@ import java.util.ArrayList;
 import java.util.Collections;
 import java.util.Comparator;
 import java.util.List;
+import java.util.Optional;
 
 
 public class TestStreams {
@@ -63,5 +64,17 @@ public class TestStreams {
 		for (String string : listLessCalName) {
 			System.out.println(string);
 		}
+		
+		System.out.println("Maximum value to be returned");
+		Optional<Integer> max= menu.stream()
+							.map(t -> t.getCalories())
+							.reduce(Integer::max);
+		max.ifPresent(System.out::println);
+		
+		System.out.println("Minimum value to be returned");
+		Optional<Integer> min= menu.stream()
+							.map(t -> t.getCalories())
+							.reduce(Integer::min);
+		min.ifPresent(System.out::println);
 	}
 }
