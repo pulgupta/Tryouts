@@ -24,6 +24,8 @@ public class CosMath implements Runnable{
 	@Override
 	public void run() {
 		this.result = Math.cos(degree);
+		//Uncomment this below line to check the handler function
+		degree = degree/0;
 		System.out.println("calculated cos");
 	}
 	

@@ -11,6 +11,8 @@ public class ThreadingMaths {
 		
 		Thread thCos = new Thread(cos);
 		thCos.setPriority(5);
+		thCos.setName("CosThread");
+		thCos.setUncaughtExceptionHandler(new MyUncaughtExceptionHandler());
 		Thread thSin = new Thread(sin);
 		Thread thTan = new Thread(tan);
 		
