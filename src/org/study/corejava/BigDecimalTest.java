@@ -2,8 +2,21 @@ package org.study.corejava;
 
 import java.math.BigDecimal;
 
+class testerStatic {
+	public void test() {
+		//BigDecimalTest.counter =10; //ERROR!
+		//Just works
+		BigDecimalTest.counter1 =10;
+	}
+}
+
 public class BigDecimalTest {
 
+	private static int counter = 0;
+	static int counter1 = 0;
+	public void test() {
+		counter =10;
+	}
 	public static void main(String args[]) {
 		
 		BigDecimal bd = new BigDecimal("1.55");
