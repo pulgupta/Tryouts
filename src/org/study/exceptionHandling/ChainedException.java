@@ -7,6 +7,8 @@ public class ChainedException {
 			ce.divide();
 		}
 		catch(Exception e) {
+			System.out.println("printing main exception");
+			System.out.println(e);
 			System.out.println("printing cause");
 			System.out.println(e.getCause());
 		}
@@ -29,7 +31,8 @@ public class ChainedException {
 		/**
 		 * Thus this is one more easy way of doing exception chaining
 		 */
-		catch(Exception e) {
+		catch(ArithmeticException e) {
+			System.out.println("in catch 1");
 			throw new RuntimeException(e);
 		}
 	}
