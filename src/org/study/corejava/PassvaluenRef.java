@@ -3,7 +3,7 @@ package org.study.corejava;
 import org.study.genericClass.Employee;
 
 //This test will prove that primitive types are passed by values 
-//and all the objects are passed by value of their reference
+//and all the objects are passed by value of their reference(This is still pass by Value only)
 //Thus primitive values changed inside a function will not affect the passed variable
 //However if we update some values of an object inside the function it will result
 //in the mutation of the original object itself.
