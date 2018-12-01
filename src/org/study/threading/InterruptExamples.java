@@ -16,7 +16,6 @@ public class InterruptExamples extends Thread {
 			Thread.sleep(1000);
 			System.out.println("task");
 		} catch (InterruptedException e) {
-			//System.out.println("Exception handled " + e);//APPROACH1
 			throw new RuntimeException("Approach 2 propagating exception");
 		}
 		System.out.println("thread is running...");
@@ -27,6 +26,7 @@ public class InterruptExamples extends Thread {
 		t1.start();
 		t1.interrupt();
 		System.out.println("This is in main method");
+		t1.join();
 		Thread.sleep(5000);
 		System.out.println("To see if the main is still executing");
 	}
