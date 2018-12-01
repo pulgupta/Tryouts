@@ -1,4 +1,4 @@
-package org.study.algos;
+package org.study.algos.trees;
 
 class BstNode {
 	int data;

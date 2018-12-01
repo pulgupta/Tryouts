@@ -1,4 +1,4 @@
-package org.study.algos;
+package org.study.algos.sorting;
 
 /**
  * In merge sort all the processing is in the merge step.

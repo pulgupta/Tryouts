@@ -1,4 +1,4 @@
-package org.study.algos;
+package org.study.algos.sorting;
 
 /**
  * Bucket sort is a sorting technique in which we will be having a large set.

@@ -1,4 +1,4 @@
-package org.study.algos;
+package org.study.algos.sorting;
 
 /**
  * This type of sorting is generally applied when we have a huge dataset

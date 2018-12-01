@@ -1,4 +1,4 @@
-package org.study.algos;
+package org.study.algos.sorting;
 
 public class InsetionSort {
 	public static void main(String[] args) {
