@@ -10,7 +10,7 @@ package org.study.algos.sorting;
 public class MergeSort {
 	
 	static int[] arr = {3,2,5,7,1};
-	static int [] tempMergArr = new int[3];
+	static int [] tempMergArr = new int[arr.length];
 	
 	public static void mergeSort(int low, int high) {
 		
