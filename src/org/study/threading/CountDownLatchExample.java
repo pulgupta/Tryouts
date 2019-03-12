@@ -1,4 +1,4 @@
-package org.study.threading.countDownLatch;
+package org.study.threading;
 
 import java.util.concurrent.CountDownLatch;
 
