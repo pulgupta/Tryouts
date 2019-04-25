@@ -33,20 +33,19 @@ public class CountDownLatchExample {
 			latch.countDown();
 			System.out.println("latch decremented in T4");
 		});
-		Thread t5 = new Thread(() -> {
-			System.out.println("T5");
-			try {
-				latch.await();
-			} catch (InterruptedException e) {
-				e.printStackTrace();
-			}
-			System.out.println("Now latch is open");
-		});
-		t5.start();
 		t1.start();
 		t2.start();
 		t3.start();
 		t4.start();
+		System.out.println("T5");
+		try {
+			latch.await();
+		} catch (InterruptedException e) {
+			e.printStackTrace();
+		}
+		// At this point we can confirm that all the threads have completed execution
+		System.out.println("Now latch is open");
+
 		
 	}
 }
