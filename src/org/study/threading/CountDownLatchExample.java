@@ -37,14 +37,14 @@ public class CountDownLatchExample {
 		t2.start();
 		t3.start();
 		t4.start();
-		System.out.println("T5");
+		System.out.println("Main Thread waiting for other threads to complete");
 		try {
 			latch.await();
 		} catch (InterruptedException e) {
 			e.printStackTrace();
 		}
 		// At this point we can confirm that all the threads have completed execution
-		System.out.println("Now latch is open");
+		System.out.println("Now latch is open we can do something which require other threads to be completed");
 
 		
 	}
