@@ -1,6 +1,6 @@
 package org.study.patterns;
 
-public final class builderPatterns {
+public final class builderPattern {
 	
 
 	//Assume this class if for Nutrition facts - This is a immutable class
@@ -15,7 +15,7 @@ public final class builderPatterns {
 	// class
 	// Now in this we will transfer the data from the builder class instance to the
 	// main class.
-	private builderPatterns(Builder builder) {
+	private builderPattern(Builder builder) {
 		servingSize = builder.servingSize;
 		servings = builder.servings;
 		calories = builder.calories;
@@ -71,8 +71,8 @@ public final class builderPatterns {
 		// This build method will be the last in the chain
 		// This will take the Builder object and then will create the parent class
 		// object
-		public builderPatterns build() {
-			return new builderPatterns(this);
+		public builderPattern build() {
+			return new builderPattern(this);
 		}
 	}
 
@@ -109,7 +109,7 @@ public final class builderPatterns {
 
 class tester1 {
 	public static void main(String args[]) {
-		builderPatterns bp = new builderPatterns.Builder(10, 10).calories(20).build();
+		builderPattern bp = new builderPattern.Builder(10, 10).calories(20).build();
 		System.out.println(bp);
 	}
 }
