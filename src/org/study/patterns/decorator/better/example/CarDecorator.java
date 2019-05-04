@@ -1,4 +1,4 @@
-package org.study.patterns.decorator.moreTests;
+package org.study.patterns.decorator.better.example;
 
 /**
  * Decorator class implements the component interface and it has a HAS-A relationship with the component interface.

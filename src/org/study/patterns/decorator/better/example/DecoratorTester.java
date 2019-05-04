@@ -1,9 +1,8 @@
-package org.study.patterns.decorator.moreTests;
+package org.study.patterns.decorator.better.example;
 
 public class DecoratorTester {
 	public static void main(String[] args) {
                 
-        System.out.println("\n*****");
         BasicCar bc = new BasicCar();
         bc.setEngineCapacity(1200);
         bc.setWheelSize(15);

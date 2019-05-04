@@ -1,4 +1,4 @@
-package org.study.patterns.decorator.moreTests;
+package org.study.patterns.decorator.better.example;
 
 /**
  * Component Implementation
