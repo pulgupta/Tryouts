@@ -17,7 +17,7 @@ public class SystemCache {
 	public static SystemDetails getDetails(int key) {
 		SystemDetails sd = map.get(key);
 		try {
-			return (SystemDetails) sd.clone();
+			return (SystemDetails) sd.clone(); // When we get the prototype we clone it and return 
 		} catch (CloneNotSupportedException e) {
 			return null;
 		}
