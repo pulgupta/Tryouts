@@ -1,0 +1,367 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xmi:XMI xmi:version="20131001" xmlns:xmi="http://www.omg.org/spec/XMI/20131001" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:UMLLabProfile="http:///schemas/UMLLabProfile/NS/0" xmlns:ecore="http://www.eclipse.org/emf/2002/Ecore" xmlns:uml="http://www.eclipse.org/uml2/5.0.0/UML" xsi:schemaLocation="http:///schemas/UMLLabProfile/NS/0 pathmap://UMLLAB_PROFILES/UMLLab.profile.uml#UMLLabProfile-Annotation_2-UMLLabProfile">
+  <uml:Model xmi:id="_3E7toG8UEemoYOEkXvHT1w" name="Tryouts">
+    <eAnnotations xmi:id="_3OfSQG8UEemoYOEkXvHT1w" source="http://ns.yatta.de/umllab">
+      <contents xmi:type="ecore:EAnnotation" xmi:id="_3OsGkG8UEemoYOEkXvHT1w" source="codegen">
+        <details xmi:id="_3OsGkW8UEemoYOEkXvHT1w" key="codegenDirectory" value="/Tryouts/src"/>
+        <details xmi:id="_3ZPwwG8UEemoYOEkXvHT1w" key="AssociatedSourceCode" value="/Tryouts/src/org/study/patterns/decorator/better/example/BasicCar.java;628657466/1;/Tryouts/src/org/study/patterns/decorator/better/example/Car.java;3860878038/1;/Tryouts/src/org/study/patterns/decorator/better/example/CarDecorator.java;4223465676/1;/Tryouts/src/org/study/patterns/decorator/better/example/DecoratorTester.java;1156370226/1;/Tryouts/src/org/study/patterns/decorator/better/example/LuxuryCar.java;1631618950/1;/Tryouts/src/org/study/patterns/decorator/better/example/SportsCar.java;2784401805/1;"/>
+      </contents>
+    </eAnnotations>
+    <elementImport xmi:id="_3Ui28G8UEemoYOEkXvHT1w">
+      <importedElement xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#boolean"/>
+    </elementImport>
+    <elementImport xmi:id="_3UjeAG8UEemoYOEkXvHT1w">
+      <importedElement xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#byte"/>
+    </elementImport>
+    <elementImport xmi:id="_3UjeAW8UEemoYOEkXvHT1w">
+      <importedElement xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#char"/>
+    </elementImport>
+    <elementImport xmi:id="_3UjeAm8UEemoYOEkXvHT1w">
+      <importedElement xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#double"/>
+    </elementImport>
+    <elementImport xmi:id="_3UjeA28UEemoYOEkXvHT1w">
+      <importedElement xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#float"/>
+    </elementImport>
+    <elementImport xmi:id="_3UjeBG8UEemoYOEkXvHT1w">
+      <importedElement xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#int"/>
+    </elementImport>
+    <elementImport xmi:id="_3UjeBW8UEemoYOEkXvHT1w">
+      <importedElement xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#long"/>
+    </elementImport>
+    <elementImport xmi:id="_3UkFEG8UEemoYOEkXvHT1w">
+      <importedElement xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#short"/>
+    </elementImport>
+    <elementImport xmi:id="_3UkFEW8UEemoYOEkXvHT1w">
+      <importedElement xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+    </elementImport>
+    <packagedElement xmi:type="uml:Package" xmi:id="_3UJOUG8UEemoYOEkXvHT1w" name="org">
+      <packagedElement xmi:type="uml:Package" xmi:id="_3UJOUW8UEemoYOEkXvHT1w" name="study">
+        <packagedElement xmi:type="uml:Package" xmi:id="_3UJOUm8UEemoYOEkXvHT1w" name="patterns">
+          <packagedElement xmi:type="uml:Package" xmi:id="_3UJ1YG8UEemoYOEkXvHT1w" name="decorator">
+            <packagedElement xmi:type="uml:Package" xmi:id="_3UJ1YW8UEemoYOEkXvHT1w" name="better">
+              <packagedElement xmi:type="uml:Package" xmi:id="_3UM4sG8UEemoYOEkXvHT1w" name="example">
+                <packagedElement xmi:type="uml:Class" xmi:id="_3UelgG8UEemoYOEkXvHT1w" name="BasicCar">
+                  <ownedComment xmi:id="_3V_ocG8UEemoYOEkXvHT1w">
+                    <body>Component Implementation
+The basic implementation of the component interface
+@author pulgupta
+ *</body>
+                  </ownedComment>
+                  <ownedAttribute xmi:id="_3VvJwG8UEemoYOEkXvHT1w" name="wheelSize" visibility="package">
+                    <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#int"/>
+                  </ownedAttribute>
+                  <ownedAttribute xmi:id="_3VwX4G8UEemoYOEkXvHT1w" name="engineCapacity" visibility="package">
+                    <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#int"/>
+                  </ownedAttribute>
+                  <interfaceRealization xmi:id="_3Vl_0G8UEemoYOEkXvHT1w" client="_3UelgG8UEemoYOEkXvHT1w" supplier="_3UwSUG8UEemoYOEkXvHT1w" contract="_3UwSUG8UEemoYOEkXvHT1w"/>
+                  <ownedBehavior xmi:type="uml:OpaqueBehavior" xmi:id="_3V3FkG8UEemoYOEkXvHT1w" name="assemble" specification="_3UksIG8UEemoYOEkXvHT1w">
+                    <language>java</language>
+                    <body>System.out.println(&quot;Basic Car&quot;);
+		System.out.println(&quot;Specs : &quot;);
+		System.out.println(&quot;Wheel Size : &quot; + this.wheelSize);
+		System.out.println(&quot;Engine Capacity : &quot; + this.engineCapacity);
+
+	</body>
+                  </ownedBehavior>
+                  <ownedBehavior xmi:type="uml:OpaqueBehavior" xmi:id="_3V4TsG8UEemoYOEkXvHT1w" name="getWheelSize" specification="_3UmhUm8UEemoYOEkXvHT1w">
+                    <ownedParameter xmi:id="_3V4TsW8UEemoYOEkXvHT1w" direction="return">
+                      <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#int"/>
+                    </ownedParameter>
+                    <language>java</language>
+                    <body>return wheelSize;
+	</body>
+                  </ownedBehavior>
+                  <ownedBehavior xmi:type="uml:OpaqueBehavior" xmi:id="_3V46wG8UEemoYOEkXvHT1w" name="setWheelSize" specification="_3UoWgG8UEemoYOEkXvHT1w">
+                    <ownedParameter xmi:id="_3V46wW8UEemoYOEkXvHT1w" name="wheelSize">
+                      <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#int"/>
+                    </ownedParameter>
+                    <language>java</language>
+                    <body>this.wheelSize = wheelSize;
+	</body>
+                  </ownedBehavior>
+                  <ownedBehavior xmi:type="uml:OpaqueBehavior" xmi:id="_3V5h0G8UEemoYOEkXvHT1w" name="getEngineCapacity" specification="_3Uo9kG8UEemoYOEkXvHT1w">
+                    <ownedParameter xmi:id="_3V5h0W8UEemoYOEkXvHT1w" direction="return">
+                      <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#int"/>
+                    </ownedParameter>
+                    <language>java</language>
+                    <body>return engineCapacity;
+	</body>
+                  </ownedBehavior>
+                  <ownedBehavior xmi:type="uml:OpaqueBehavior" xmi:id="_3V6I4G8UEemoYOEkXvHT1w" name="setEngineCapacity" specification="_3UpkoG8UEemoYOEkXvHT1w">
+                    <ownedParameter xmi:id="_3V6I4W8UEemoYOEkXvHT1w" name="engineCapacity">
+                      <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#int"/>
+                    </ownedParameter>
+                    <language>java</language>
+                    <body>this.engineCapacity = engineCapacity;
+	</body>
+                  </ownedBehavior>
+                  <ownedOperation xmi:id="_3UksIG8UEemoYOEkXvHT1w" name="assemble" method="_3V3FkG8UEemoYOEkXvHT1w"/>
+                  <ownedOperation xmi:id="_3UmhUm8UEemoYOEkXvHT1w" name="getWheelSize" method="_3V4TsG8UEemoYOEkXvHT1w">
+                    <ownedParameter xmi:id="_3UnIYG8UEemoYOEkXvHT1w" direction="return">
+                      <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#int"/>
+                    </ownedParameter>
+                  </ownedOperation>
+                  <ownedOperation xmi:id="_3UoWgG8UEemoYOEkXvHT1w" name="setWheelSize" method="_3V46wG8UEemoYOEkXvHT1w">
+                    <ownedParameter xmi:id="_3UoWgW8UEemoYOEkXvHT1w" name="wheelSize">
+                      <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#int"/>
+                    </ownedParameter>
+                  </ownedOperation>
+                  <ownedOperation xmi:id="_3Uo9kG8UEemoYOEkXvHT1w" name="getEngineCapacity" method="_3V5h0G8UEemoYOEkXvHT1w">
+                    <ownedParameter xmi:id="_3Uo9kW8UEemoYOEkXvHT1w" direction="return">
+                      <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#int"/>
+                    </ownedParameter>
+                  </ownedOperation>
+                  <ownedOperation xmi:id="_3UpkoG8UEemoYOEkXvHT1w" name="setEngineCapacity" method="_3V6I4G8UEemoYOEkXvHT1w">
+                    <ownedParameter xmi:id="_3UpkoW8UEemoYOEkXvHT1w" name="engineCapacity">
+                      <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#int"/>
+                    </ownedParameter>
+                  </ownedOperation>
+                </packagedElement>
+                <packagedElement xmi:type="uml:Interface" xmi:id="_3UwSUG8UEemoYOEkXvHT1w" name="Car">
+                  <ownedComment xmi:id="_3WAPgG8UEemoYOEkXvHT1w">
+                    <body>COMPONENT INTERFACE
+The interface or the abstract class defining the methods that will be implemented.
+@author pulgupta
+ *</body>
+                  </ownedComment>
+                  <ownedOperation xmi:id="_3UxgcG8UEemoYOEkXvHT1w" name="assemble"/>
+                </packagedElement>
+                <packagedElement xmi:type="uml:Class" xmi:id="_3UyHgG8UEemoYOEkXvHT1w" name="CarDecorator">
+                  <ownedComment xmi:id="_3WA2kG8UEemoYOEkXvHT1w">
+                    <body>Decorator class implements the component interface and it has a HAS-A relationship with the component interface.
+@author pulgupta
+ *</body>
+                  </ownedComment>
+                  <ownedAttribute xmi:id="_3Vw-8W8UEemoYOEkXvHT1w" name="car" visibility="protected" type="_3UwSUG8UEemoYOEkXvHT1w" association="_3WD54G8UEemoYOEkXvHT1w"/>
+                  <interfaceRealization xmi:id="_3VnN8G8UEemoYOEkXvHT1w" client="_3UyHgG8UEemoYOEkXvHT1w" supplier="_3UwSUG8UEemoYOEkXvHT1w" contract="_3UwSUG8UEemoYOEkXvHT1w"/>
+                  <ownedBehavior xmi:type="uml:OpaqueBehavior" xmi:id="_3V6v8G8UEemoYOEkXvHT1w" name="CarDecorator" specification="_3VocEG8UEemoYOEkXvHT1w">
+                    <ownedParameter xmi:id="_3V6v8W8UEemoYOEkXvHT1w" name="car" type="_3UwSUG8UEemoYOEkXvHT1w"/>
+                    <ownedParameter xmi:id="_3V6v8m8UEemoYOEkXvHT1w" type="_3UyHgG8UEemoYOEkXvHT1w" direction="return"/>
+                    <language>java</language>
+                    <body>this.car = car;
+	</body>
+                  </ownedBehavior>
+                  <ownedBehavior xmi:type="uml:OpaqueBehavior" xmi:id="_3V7XAG8UEemoYOEkXvHT1w" name="assemble" specification="_3Uz8sG8UEemoYOEkXvHT1w">
+                    <language>java</language>
+                    <body>this.car.assemble();
+	</body>
+                  </ownedBehavior>
+                  <ownedOperation xmi:id="_3Uz8sG8UEemoYOEkXvHT1w" name="assemble" method="_3V7XAG8UEemoYOEkXvHT1w"/>
+                  <ownedOperation xmi:id="_3VocEG8UEemoYOEkXvHT1w" name="CarDecorator" method="_3V6v8G8UEemoYOEkXvHT1w">
+                    <eAnnotations xmi:id="_3VocEm8UEemoYOEkXvHT1w" source="http://www.eclipse.org/uml2/2.0.0/UML">
+                      <details xmi:id="_3VocE28UEemoYOEkXvHT1w" key="create"/>
+                    </eAnnotations>
+                    <ownedParameter xmi:id="_3VocEW8UEemoYOEkXvHT1w" name="car" type="_3UwSUG8UEemoYOEkXvHT1w"/>
+                    <ownedParameter xmi:id="_3VocFG8UEemoYOEkXvHT1w" type="_3UyHgG8UEemoYOEkXvHT1w" direction="return"/>
+                  </ownedOperation>
+                </packagedElement>
+                <packagedElement xmi:type="uml:Class" xmi:id="_3U2Y8G8UEemoYOEkXvHT1w" name="DecoratorTester">
+                  <ownedBehavior xmi:type="uml:OpaqueBehavior" xmi:id="_3V7-EG8UEemoYOEkXvHT1w" name="main" specification="_3U3nEG8UEemoYOEkXvHT1w">
+                    <ownedParameter xmi:id="_3V7-EW8UEemoYOEkXvHT1w" name="args">
+                      <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+                      <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_3V7-Em8UEemoYOEkXvHT1w" value="*"/>
+                    </ownedParameter>
+                    <language>java</language>
+                    <body>BasicCar bc = new BasicCar();
+     bc.setEngineCapacity(1200);
+     bc.setWheelSize(15);
+     LuxuryCar lc = new LuxuryCar(bc);
+     lc.setLeatherMake(&quot;premium&quot;);
+     SportsCar sc = new SportsCar(lc);
+     sc.setDrivingModes(4);
+     sc.setPeakTorqueMods(2);
+     Car sportsLuxuryCar = sc;
+     sportsLuxuryCar.assemble();
+     
+ </body>
+                  </ownedBehavior>
+                  <ownedOperation xmi:id="_3U3nEG8UEemoYOEkXvHT1w" name="main" isStatic="true" method="_3V7-EG8UEemoYOEkXvHT1w">
+                    <ownedParameter xmi:id="_3U3nEW8UEemoYOEkXvHT1w" name="args">
+                      <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+                      <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_3U4OIG8UEemoYOEkXvHT1w" value="*"/>
+                    </ownedParameter>
+                  </ownedOperation>
+                </packagedElement>
+                <packagedElement xmi:type="uml:Class" xmi:id="_3U4OIW8UEemoYOEkXvHT1w" name="LuxuryCar">
+                  <generalization xmi:id="_3VqRQ28UEemoYOEkXvHT1w" general="_3UyHgG8UEemoYOEkXvHT1w"/>
+                  <ownedAttribute xmi:id="_3VyNEG8UEemoYOEkXvHT1w" name="leatherMake" visibility="package">
+                    <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+                  </ownedAttribute>
+                  <ownedBehavior xmi:type="uml:OpaqueBehavior" xmi:id="_3V7-E28UEemoYOEkXvHT1w" name="LuxuryCar" specification="_3VpqMG8UEemoYOEkXvHT1w">
+                    <ownedParameter xmi:id="_3V7-FG8UEemoYOEkXvHT1w" name="car" type="_3UwSUG8UEemoYOEkXvHT1w"/>
+                    <ownedParameter xmi:id="_3V7-FW8UEemoYOEkXvHT1w" type="_3U4OIW8UEemoYOEkXvHT1w" direction="return"/>
+                    <language>java</language>
+                    <body>super(car);
+	</body>
+                  </ownedBehavior>
+                  <ownedBehavior xmi:type="uml:OpaqueBehavior" xmi:id="_3V8lIG8UEemoYOEkXvHT1w" name="assemble" specification="_3U6DUG8UEemoYOEkXvHT1w">
+                    <language>java</language>
+                    <body>car.assemble();
+		System.out.println(&quot;adding the features of luxury car&quot;);
+		System.out.println(&quot;Specs : &quot;);
+		System.out.println(&quot;Leather Make : &quot; + this.leatherMake);
+	</body>
+                  </ownedBehavior>
+                  <ownedBehavior xmi:type="uml:OpaqueBehavior" xmi:id="_3V8lIW8UEemoYOEkXvHT1w" name="getLeatherMake" specification="_3U7Rcm8UEemoYOEkXvHT1w">
+                    <ownedParameter xmi:id="_3V8lIm8UEemoYOEkXvHT1w" direction="return">
+                      <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+                    </ownedParameter>
+                    <language>java</language>
+                    <body>return leatherMake;
+	</body>
+                  </ownedBehavior>
+                  <ownedBehavior xmi:type="uml:OpaqueBehavior" xmi:id="_3V9MMG8UEemoYOEkXvHT1w" name="setLeatherMake" specification="_3U8fkG8UEemoYOEkXvHT1w">
+                    <ownedParameter xmi:id="_3V9MMW8UEemoYOEkXvHT1w" name="leatherMake">
+                      <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+                    </ownedParameter>
+                    <language>java</language>
+                    <body>this.leatherMake = leatherMake;
+	</body>
+                  </ownedBehavior>
+                  <ownedOperation xmi:id="_3U6DUG8UEemoYOEkXvHT1w" name="assemble" method="_3V8lIG8UEemoYOEkXvHT1w"/>
+                  <ownedOperation xmi:id="_3U7Rcm8UEemoYOEkXvHT1w" name="getLeatherMake" method="_3V8lIW8UEemoYOEkXvHT1w">
+                    <ownedParameter xmi:id="_3U74gG8UEemoYOEkXvHT1w" direction="return">
+                      <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+                    </ownedParameter>
+                  </ownedOperation>
+                  <ownedOperation xmi:id="_3U8fkG8UEemoYOEkXvHT1w" name="setLeatherMake" method="_3V9MMG8UEemoYOEkXvHT1w">
+                    <ownedParameter xmi:id="_3U8fkW8UEemoYOEkXvHT1w" name="leatherMake">
+                      <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+                    </ownedParameter>
+                  </ownedOperation>
+                  <ownedOperation xmi:id="_3VpqMG8UEemoYOEkXvHT1w" name="LuxuryCar" method="_3V7-E28UEemoYOEkXvHT1w">
+                    <eAnnotations xmi:id="_3VqRQG8UEemoYOEkXvHT1w" source="http://www.eclipse.org/uml2/2.0.0/UML">
+                      <details xmi:id="_3VqRQW8UEemoYOEkXvHT1w" key="create"/>
+                    </eAnnotations>
+                    <ownedParameter xmi:id="_3VpqMW8UEemoYOEkXvHT1w" name="car" type="_3UwSUG8UEemoYOEkXvHT1w"/>
+                    <ownedParameter xmi:id="_3VqRQm8UEemoYOEkXvHT1w" type="_3U4OIW8UEemoYOEkXvHT1w" direction="return"/>
+                  </ownedOperation>
+                </packagedElement>
+                <packagedElement xmi:type="uml:Class" xmi:id="_3U-70G8UEemoYOEkXvHT1w" name="SportsCar">
+                  <generalization xmi:id="_3VsGcm8UEemoYOEkXvHT1w" general="_3UyHgG8UEemoYOEkXvHT1w"/>
+                  <ownedAttribute xmi:id="_3V0CQG8UEemoYOEkXvHT1w" name="drivingModes" visibility="package">
+                    <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#int"/>
+                  </ownedAttribute>
+                  <ownedAttribute xmi:id="_3V1QYG8UEemoYOEkXvHT1w" name="peakTorqueMods" visibility="package">
+                    <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#int"/>
+                  </ownedAttribute>
+                  <ownedBehavior xmi:type="uml:OpaqueBehavior" xmi:id="_3V9MMm8UEemoYOEkXvHT1w" name="SportsCar" specification="_3VrfYG8UEemoYOEkXvHT1w">
+                    <ownedParameter xmi:id="_3V9MM28UEemoYOEkXvHT1w" name="car" type="_3UwSUG8UEemoYOEkXvHT1w"/>
+                    <ownedParameter xmi:id="_3V9MNG8UEemoYOEkXvHT1w" type="_3U-70G8UEemoYOEkXvHT1w" direction="return"/>
+                    <language>java</language>
+                    <body>super(car);
+	</body>
+                  </ownedBehavior>
+                  <ownedBehavior xmi:type="uml:OpaqueBehavior" xmi:id="_3V9zQG8UEemoYOEkXvHT1w" name="assemble" specification="_3VAJ8G8UEemoYOEkXvHT1w">
+                    <language>java</language>
+                    <body>car.assemble();
+		System.out.println(&quot;adding the features of sports car&quot;);
+		System.out.println(&quot;Specs : &quot;);
+		System.out.println(&quot;Driving Modes : &quot; + this.drivingModes);
+		System.out.println(&quot;Peak Torque Modes : &quot; + this.peakTorqueMods);
+	</body>
+                  </ownedBehavior>
+                  <ownedBehavior xmi:type="uml:OpaqueBehavior" xmi:id="_3V9zQW8UEemoYOEkXvHT1w" name="getDrivingModes" specification="_3VEbYG8UEemoYOEkXvHT1w">
+                    <ownedParameter xmi:id="_3V9zQm8UEemoYOEkXvHT1w" direction="return">
+                      <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#int"/>
+                    </ownedParameter>
+                    <language>java</language>
+                    <body>return drivingModes;
+	</body>
+                  </ownedBehavior>
+                  <ownedBehavior xmi:type="uml:OpaqueBehavior" xmi:id="_3V9zQ28UEemoYOEkXvHT1w" name="setDrivingModes" specification="_3VFCcW8UEemoYOEkXvHT1w">
+                    <ownedParameter xmi:id="_3V9zRG8UEemoYOEkXvHT1w" name="drivingModes">
+                      <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#int"/>
+                    </ownedParameter>
+                    <language>java</language>
+                    <body>this.drivingModes = drivingModes;
+	</body>
+                  </ownedBehavior>
+                  <ownedBehavior xmi:type="uml:OpaqueBehavior" xmi:id="_3V-aUG8UEemoYOEkXvHT1w" name="getPeakTorqueMods" specification="_3VFpgW8UEemoYOEkXvHT1w">
+                    <ownedParameter xmi:id="_3V-aUW8UEemoYOEkXvHT1w" direction="return">
+                      <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#int"/>
+                    </ownedParameter>
+                    <language>java</language>
+                    <body>return peakTorqueMods;
+	</body>
+                  </ownedBehavior>
+                  <ownedBehavior xmi:type="uml:OpaqueBehavior" xmi:id="_3V-aUm8UEemoYOEkXvHT1w" name="setPeakTorqueMods" specification="_3VG3oG8UEemoYOEkXvHT1w">
+                    <ownedParameter xmi:id="_3V-aU28UEemoYOEkXvHT1w" name="peakTorqueMods">
+                      <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#int"/>
+                    </ownedParameter>
+                    <language>java</language>
+                    <body>this.peakTorqueMods = peakTorqueMods;
+	</body>
+                  </ownedBehavior>
+                  <ownedOperation xmi:id="_3VAJ8G8UEemoYOEkXvHT1w" name="assemble" method="_3V9zQG8UEemoYOEkXvHT1w"/>
+                  <ownedOperation xmi:id="_3VEbYG8UEemoYOEkXvHT1w" name="getDrivingModes" method="_3V9zQW8UEemoYOEkXvHT1w">
+                    <ownedParameter xmi:id="_3VFCcG8UEemoYOEkXvHT1w" direction="return">
+                      <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#int"/>
+                    </ownedParameter>
+                  </ownedOperation>
+                  <ownedOperation xmi:id="_3VFCcW8UEemoYOEkXvHT1w" name="setDrivingModes" method="_3V9zQ28UEemoYOEkXvHT1w">
+                    <ownedParameter xmi:id="_3VFpgG8UEemoYOEkXvHT1w" name="drivingModes">
+                      <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#int"/>
+                    </ownedParameter>
+                  </ownedOperation>
+                  <ownedOperation xmi:id="_3VFpgW8UEemoYOEkXvHT1w" name="getPeakTorqueMods" method="_3V-aUG8UEemoYOEkXvHT1w">
+                    <ownedParameter xmi:id="_3VGQkG8UEemoYOEkXvHT1w" direction="return">
+                      <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#int"/>
+                    </ownedParameter>
+                  </ownedOperation>
+                  <ownedOperation xmi:id="_3VG3oG8UEemoYOEkXvHT1w" name="setPeakTorqueMods" method="_3V-aUm8UEemoYOEkXvHT1w">
+                    <ownedParameter xmi:id="_3VG3oW8UEemoYOEkXvHT1w" name="peakTorqueMods">
+                      <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#int"/>
+                    </ownedParameter>
+                  </ownedOperation>
+                  <ownedOperation xmi:id="_3VrfYG8UEemoYOEkXvHT1w" name="SportsCar" method="_3V9MMm8UEemoYOEkXvHT1w">
+                    <eAnnotations xmi:id="_3VrfYm8UEemoYOEkXvHT1w" source="http://www.eclipse.org/uml2/2.0.0/UML">
+                      <details xmi:id="_3VsGcG8UEemoYOEkXvHT1w" key="create"/>
+                    </eAnnotations>
+                    <ownedParameter xmi:id="_3VrfYW8UEemoYOEkXvHT1w" name="car" type="_3UwSUG8UEemoYOEkXvHT1w"/>
+                    <ownedParameter xmi:id="_3VsGcW8UEemoYOEkXvHT1w" type="_3U-70G8UEemoYOEkXvHT1w" direction="return"/>
+                  </ownedOperation>
+                </packagedElement>
+                <packagedElement xmi:type="uml:Association" xmi:id="_3WD54G8UEemoYOEkXvHT1w" name="" memberEnd="_3WD54W8UEemoYOEkXvHT1w _3Vw-8W8UEemoYOEkXvHT1w">
+                  <ownedEnd xmi:id="_3WD54W8UEemoYOEkXvHT1w" name="" type="_3UyHgG8UEemoYOEkXvHT1w" association="_3WD54G8UEemoYOEkXvHT1w"/>
+                </packagedElement>
+              </packagedElement>
+            </packagedElement>
+          </packagedElement>
+        </packagedElement>
+      </packagedElement>
+    </packagedElement>
+    <profileApplication xmi:id="_3OwYAG8UEemoYOEkXvHT1w">
+      <eAnnotations xmi:id="_3OwYAW8UEemoYOEkXvHT1w" source="http://www.eclipse.org/uml2/2.0.0/UML">
+        <references xmi:type="ecore:EPackage" href="pathmap://UMLLAB_PROFILES/UMLLab.profile.uml#UMLLabProfile-Annotation_2-UMLLabProfile"/>
+      </eAnnotations>
+      <appliedProfile href="pathmap://UMLLAB_PROFILES/UMLLab.profile.uml#UMLLabProfile"/>
+    </profileApplication>
+  </uml:Model>
+  <UMLLabProfile:TargetLanguage xmi:id="_3Ow_EG8UEemoYOEkXvHT1w" base_Package="_3E7toG8UEemoYOEkXvHT1w">
+    <languageName>java</languageName>
+  </UMLLabProfile:TargetLanguage>
+  <UMLLabProfile:LegacyStyledElement xmi:id="_3UlTMG8UEemoYOEkXvHT1w" base_Element="_3UksIG8UEemoYOEkXvHT1w"/>
+  <UMLLabProfile:Annotations xmi:id="_3UmhUG8UEemoYOEkXvHT1w" base_Element="_3UksIG8UEemoYOEkXvHT1w">
+    <annotations xmi:id="_3UmhUW8UEemoYOEkXvHT1w" name="Override"/>
+  </UMLLabProfile:Annotations>
+  <UMLLabProfile:LegacyStyledElement xmi:id="_3U0jwG8UEemoYOEkXvHT1w" base_Element="_3Uz8sG8UEemoYOEkXvHT1w"/>
+  <UMLLabProfile:Annotations xmi:id="_3U0jwW8UEemoYOEkXvHT1w" base_Element="_3Uz8sG8UEemoYOEkXvHT1w">
+    <annotations xmi:id="_3U1K0G8UEemoYOEkXvHT1w" name="Override"/>
+  </UMLLabProfile:Annotations>
+  <UMLLabProfile:LegacyStyledElement xmi:id="_3U6qYG8UEemoYOEkXvHT1w" base_Element="_3U6DUG8UEemoYOEkXvHT1w"/>
+  <UMLLabProfile:Annotations xmi:id="_3U7RcG8UEemoYOEkXvHT1w" base_Element="_3U6DUG8UEemoYOEkXvHT1w">
+    <annotations xmi:id="_3U7RcW8UEemoYOEkXvHT1w" name="Override"/>
+  </UMLLabProfile:Annotations>
+  <UMLLabProfile:LegacyStyledElement xmi:id="_3VDNQG8UEemoYOEkXvHT1w" base_Element="_3VAJ8G8UEemoYOEkXvHT1w"/>
+  <UMLLabProfile:Annotations xmi:id="_3VD0UG8UEemoYOEkXvHT1w" base_Element="_3VAJ8G8UEemoYOEkXvHT1w">
+    <annotations xmi:id="_3VD0UW8UEemoYOEkXvHT1w" name="Override"/>
+  </UMLLabProfile:Annotations>
+  <UMLLabProfile:LegacyStyledElement xmi:id="_3Vvw0G8UEemoYOEkXvHT1w" base_Element="_3VvJwG8UEemoYOEkXvHT1w"/>
+  <UMLLabProfile:LegacyStyledElement xmi:id="_3Vw-8G8UEemoYOEkXvHT1w" base_Element="_3VwX4G8UEemoYOEkXvHT1w"/>
+  <UMLLabProfile:LegacyStyledElement xmi:id="_3VxmAG8UEemoYOEkXvHT1w" base_Element="_3Vw-8W8UEemoYOEkXvHT1w"/>
+  <UMLLabProfile:LegacyStyledElement xmi:id="_3Vy0IG8UEemoYOEkXvHT1w" base_Element="_3VyNEG8UEemoYOEkXvHT1w"/>
+  <UMLLabProfile:LegacyStyledElement xmi:id="_3V0pUG8UEemoYOEkXvHT1w" base_Element="_3V0CQG8UEemoYOEkXvHT1w"/>
+  <UMLLabProfile:LegacyStyledElement xmi:id="_3V13cG8UEemoYOEkXvHT1w" base_Element="_3V1QYG8UEemoYOEkXvHT1w"/>
+  <UMLLabProfile:Reference xmi:id="_3WFIAG8UEemoYOEkXvHT1w" base_Element="_3WD54G8UEemoYOEkXvHT1w"/>
+</xmi:XMI>
