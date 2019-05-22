@@ -2,6 +2,12 @@ package org.java8.general.concepts;
 
 import java.util.function.BiConsumer;
 
+/**
+ * A  way to wrap a lambda into another lambda of same type with proper try catch.
+ * We can then use the smaller lambda but by wrapping in into the more versatile lambda
+ * @author pulgupta
+ *
+ */
 public class LambdasExceptionHandingDemo {
 	public static void main(String[] args) {
 		int arr[] = {10,5,8,4};
@@ -32,14 +38,12 @@ public class LambdasExceptionHandingDemo {
 	 * A wrapper just to implement all error handling. This single method can then be used
 	 * with many actual method implementation 
 	 * @param consumer
-	 * @return
+	 * @return 
 	 */
 	public static BiConsumer<Integer, Integer> wrapperLambda(BiConsumer<Integer, Integer> consumer) {
-		//this is receiving (a,b) -> System.out.println(a/b) as the accept method body
 		System.out.println("In wrapper");
 		return (a, b) -> {
 			try{
-				//Assume this is coming here System.out.println(a/b)
 				consumer.accept(a, b);
 			}
 			catch(ArithmeticException e){
