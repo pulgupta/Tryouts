@@ -1,4 +1,4 @@
-package org.java8.general.concepts;
+package org.study.corejava;
 
 public class SplitTest {
 	public static void main(String[] args) {	

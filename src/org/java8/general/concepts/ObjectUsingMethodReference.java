@@ -26,11 +26,13 @@ public class ObjectUsingMethodReference {
 		// Lambda for the below code
 		// Supplier<Apple> s = () -> new Apple();
 		Supplier<AppleTest> s1 = AppleTest::new; // Method reference
+		@SuppressWarnings("unused")
 		AppleTest obj = s1.get();
 		
 		//Calling parameterized constructor
-		//Labmda Function<String, AppleTest> s = (String str) -> new AppleTest(str);
+		//Lambda Function<String, AppleTest> s = (String str) -> new AppleTest(str);
 		Function<String, AppleTest> s2 = AppleTest::new;
+		@SuppressWarnings("unused")
 		AppleTest obj2 = s2.apply("Orange");
 		
 	}
