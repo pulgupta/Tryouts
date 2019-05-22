@@ -10,11 +10,12 @@ public class UsingStaticVariables {
 	public void testInstanceVar()
 	{
 		var = 10;
-		// We can use any instance variable or static variable in the lambdas
-		// However we can't use a local variable if it is not marked as 
-		// Final or if it is not effectively final
-		int data = 10;
-		data++;
+		/* We can use any instance variable or static variable in the lambdas
+		 * However we can't use a local variable if it is not marked as 
+		 * Final or if it is not effectively final
+		 */
+		int data = 10; // We can use this in lambda
+		data++;  // Now after this we can't use this in lambda
 		Supplier<Integer> supplier = () -> {return staticTest + var; };
 		System.out.println(supplier.get());
 	}
