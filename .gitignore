@@ -12,3 +12,5 @@ countDownLatch/
 *.jar
 *.war
 *.ear
+.idea/
+Tryouts.iml

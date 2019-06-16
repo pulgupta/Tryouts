@@ -2,9 +2,10 @@ package org.study.bitwise.operations;
 
 public class Operations {
 	public static void main(String args[]) {
-		//this means 2*4 
+		//this means 2*4
+		// 00000010 -> 00001000 (Shifting 1 by two places towards left)
 		System.out.println(2 << 2);
-		System.out.println(-5 << 2);
+		System.out.println("-5 shifting by two places to left " + (-5 << 2));
 		
 		System.out.println(8>>2);
 		System.out.println(8 >>> 2);
@@ -27,10 +28,13 @@ public class Operations {
 		//Why do we do not need unsigned left shift
 		System.out.println("No unsigned left shift");
 		int lf = 0b11111111;
+
 		//In this case it will move the signed bit
 		System.out.println(lf>>2);
+
 		//In this case it will not move the signed bit
 		System.out.println(lf>>>2);
+
 		//In this case no need as we are not changing the right bits
 		System.out.println(lf<<2);
 		
