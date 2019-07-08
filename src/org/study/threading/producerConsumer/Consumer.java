@@ -11,10 +11,12 @@ public class Consumer implements Runnable {
 	}
 
 	private void consume() {
-		synchronized (queue) {
-
+		synchronized (queue) { // When we are locking queue we can only call wait/notify on this locked object
 			while (queue.size() == 0) {
 				try {
+					// Remember when wait is called it releases the lock which means that queue can be locked by other
+					// If this was not true then the producer will never be able to lock queue again while
+					// producer is producing.
 					queue.wait();
 				} catch (InterruptedException e) {
 					System.out.println(e);

@@ -16,7 +16,8 @@ public class Producer implements Runnable {
 		synchronized (queue) {
 			while (queue.size() > MAX_CAPACITY) {
 				try {
-					queue.wait();
+					System.out.println("Locking queue");
+					queue.wait(); // This will release the lock so that the consumer can acquire the lock
 				} catch (InterruptedException e) {
 					System.out.println(e);
 				}
